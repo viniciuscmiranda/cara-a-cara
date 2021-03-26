@@ -118,6 +118,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  pointer-events: none;
 }
 
 #open-notes {
@@ -128,6 +129,7 @@ body {
   border: 1px solid var(--border-color);
   color: var(--text-color);
   width: min-content;
+  pointer-events: all;
 }
 
 #open-notes:hover {
@@ -138,10 +140,13 @@ body {
   display: none;
 }
 
-#notes-checkbox:checked + #notes-container {
+#notes-checkbox:checked + #notes {
+  pointer-events: all;
+}
+
+#notes-checkbox:checked + #notes #notes-container {
   transform: translateX(0);
   opacity: 1;
-  pointer-events: all;
 }
 
 #notes-container {
@@ -152,7 +157,6 @@ body {
 
   transform: translateX(200%);
   opacity: 0;
-  pointer-events: none;
 
   transition-property: transform, opacity;
 }
