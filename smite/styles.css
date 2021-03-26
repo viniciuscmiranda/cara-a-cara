@@ -22,6 +22,8 @@
   font-family: "Penumbra", "Times New Roman", Times, serif;
 }
 
-.char-button {
+.char-button > div {
   background-size: 115%;
+  height: 115%;
+  width: 115%;
 }
