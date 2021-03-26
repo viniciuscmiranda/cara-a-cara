@@ -1,0 +1,26 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: rgb(3, 3, 3);
+  color: white;
+}
+
+#select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#select a img {
+  width: 400px;
+  margin: 40px 0;
+  transition: width 0.15s ease;
+}
+
+#select a:hover img {
+  width: 420px;
+}

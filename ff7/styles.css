@@ -1,0 +1,23 @@
+@font-face {
+  font-family: FinalF;
+  src: url("../assets/fonts/finalf.ttf");
+}
+
+:root {
+  --border-color: #81858b;
+  --border-color-highlight: white;
+  --text-color: white;
+  --main-color: #002a32;
+
+  --scroll-background-color: #172a49;
+  --scroll-thumb-color: #364661;
+  --scroll-thumb-hover-color: #2e3847;
+  --background-image: url("../images/ff7/background.jpg");
+
+  /* "none" para esconder ou "block" para mostrar */
+  --display-charnames: block;
+}
+
+* {
+  font-family: "FinfalF", "Times New Roman", Times, serif;
+}
